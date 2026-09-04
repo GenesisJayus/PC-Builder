@@ -9,3 +9,44 @@ button {
  height: 250px; 
  margin: 10px;
 }
+
+body {
+ display: flex;
+ flex-direction: column;
+ gap: 0px;
+}
+
+.header {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ background-color: aqua;
+ padding: 0%;
+ margin: 0;
+}
+
+#PFP {
+ border-radius: 100%;
+}
+
+.topT,.topM{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 0px;
+ margin: 0px;
+}
+
+.topT{
+ margin-top: 1.5rem;
+ margin-bottom: 3rem;
+ white-space: nowrap;
+}
+
+.botM {
+ display: flex;
+ justify-content: center;
+ padding: 2rem 0 0 0;
+ white-space: nowrap;   
+}
