@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Designs/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class = "header">
@@ -13,30 +16,47 @@
         </div>
         <div class="right-side">
             <a href="/Pages/construction.html"><img src="/Assets/help.png" alt="help" width="40rem" height="40rem"></a>
-            <a href="/Pages/construction.html"><img src="/Assets/gear.png" alt="settings" width="40rem" height="40rem"></a>
-            <a href="/Pages/construction.html"><img src="/Assets/pfp.jpg" alt="profile" width="40rem" height="40rem" id="PFP"></a>
+            <div class="settings">
+                <button class="settings" id="settings">
+                    <img src="/Assets/pfp.jpg" alt="profile" class="pfp" id="PFP">
+                    <script src="/Scripts/pfp_drop.js" defer></script>
+                </button>
+                <div id="DropM" class="dropM hidden" >
+                    <a href="Pages/construction.html"><button class="butts_in_drop">
+                        <img src="/Assets/gear.png" alt="settings" width="30rem" height="30rem">
+                        Settings
+                    </button></a>
+                    <a href="Pages/construction.html"><button class="butts_in_drop">
+                        <img src="/Assets/acc.png" alt="account" width="30rem" height="30rem">
+                        Account
+                    </button></a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="middle">
-        <h1 class="topT">
-            <span style="font-size: 80px;">Welcome to the PC Builder</span>
+        <h1 class="topT Welcome">
+            Welcome to PC Builder
         </h1>
         <p class="topM">
             <span style="font-size: 25px;">What would you like to build?</span>
         </p>
         <div class="botM">
-            <a href="/Pages/construction.html"><button>
+            <a href="/Pages/construction.html"><button id="sys_u_butt" class="main_butts">
                 System Unit
                 <img src="/Assets/Sys U.png" alt="System Unit" width="180rem" height="180rem" style="vertical-align: middle;">
+                <script src="/Scripts/hover_bg.js" defer></script>
             </button></a> 
-            <a href="/Pages/construction.html"><button>
+            <a href="/Pages/construction.html"><button id="pher_u_butt" class="main_butts">
                 Pheripherals
                 <img src="/Assets/comp.png" alt="Pheripherals" width="180rem" height="180rem" style="vertical-align: middle;">
+                <script src="/Scripts/hover_bg.js" defer></script>
             </button></a>
-            <a href="/Pages/construction.html"><button>
+            <a href="/Pages/construction.html"><button id="oth_u_butt" class="main_butts">
                 Others
                 <img src="/Assets/Etc.png" alt="Others" width="180" height="180" style="vertical-align: middle;" href="/Pages/construction.html">
+                <script src="/Scripts/hover_bg.js" defer></script>
             </button></a>
         </div>
     </div>
@@ -45,7 +65,7 @@
         <a href="/Pages/construction.html"><p style="font-size: 20px;">Suggestion</p></a>
         <a href="/Pages/construction.html"><p style="font-size: 20px;">Credits</p></a>
         <a href="/Pages/construction.html"><p style="font-size: 20px;">Legal</p></a>
-        <a href="/Pages/construction.html"><p style="font-size: 20px;">Support</p></a>
+        <a href="/Pages/construction.html"><p style="font-size: 20px;">About</p></a>
     </div>  
 </body>
 </html>

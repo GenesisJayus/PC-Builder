@@ -1,4 +1,4 @@
-button {
+.main_butts {
  font-family: 'Times New Roman', Times, serif;
  font-size: 30px;
  display: inline-flex;
@@ -21,6 +21,20 @@ body {
  background-size: cover;
 }
 
+body::before {
+ content: "";
+ position: fixed;
+ inset: 0;
+ background-image: var(--hov_bg, url(/Assets/bg.jpg));
+ opacity: var(--op, 0);
+ transition: opacity .5s ease;
+ pointer-events: none;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ z-index: -2;
+}
+
 .header {
  display: flex;
  flex-direction: row;
@@ -34,6 +48,10 @@ body {
 
 #PFP {
  border-radius: 100%;
+ width: 100%;
+ height: 100%;
+ display: block;
+ object-fit: cover;
 }
 
 .topT,.topM{
@@ -42,6 +60,12 @@ body {
  justify-content: center;
  align-items: center;
  margin: 0px;
+}
+
+.Welcome{
+ font-family: 'Montserrat', sans-serif;
+ font-size: 4em;
+ font-weight: 1000;
 }
 
 .topT{
@@ -77,4 +101,63 @@ body {
  gap: 6rem;
  margin: 1rem 0 0 0;
  padding: 0;
+}
+
+.settings {
+ position: relative;
+ display: inline-block;
+ 
+ width: 3rem; 
+ height: 3rem;
+ aspect-ratio: 1 / 1;
+
+ margin: 0;
+ border-radius: 100%;
+ padding: 0;
+
+ cursor: pointer;
+}
+
+a {
+ text-decoration: none;
+}
+
+.butts_in_drop {
+ background-color: lightblue;
+
+ font: 1em sans-serif;
+ font-size: 1.5rem;
+ font-weight: 600;
+
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+
+ margin: 0.3rem 0 0 0;
+ border: 0px
+}
+
+.dropM {
+ position: absolute;
+ right: 0px;
+ min-width: 100px;
+ padding: 0 0.3rem 0.4rem 0.3rem;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ 
+ background-color: gray;
+ opacity: 1;
+ pointer-events: all;
+}
+
+.dropM.hidden {
+ opacity: 0;
+ pointer-events: none;
+}
+
+.dropM button:hover{
+ background-color: blue;
 }
