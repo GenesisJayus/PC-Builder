@@ -103,6 +103,13 @@ body::before {
  padding: 0;
 }
 
+.bot a {
+ color: black;
+}
+.bot a:hover {
+ color: rgb(61, 0, 97);
+}
+
 .settings {
  position: relative;
  display: inline-block;
