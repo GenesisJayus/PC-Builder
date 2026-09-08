@@ -41,7 +41,7 @@ body::before {
  justify-content: space-between;
  align-items: center;
  background-color: aqua;
- padding: 0 1rem 0 1rem;
+ padding: .15rem .3rem;
  margin: 0px;
  border: 0px;
  gap: 20px;
@@ -64,6 +64,17 @@ body::before {
  object-fit: cover;
 }
 
+#logo {
+ display: flex;
+ align-items: center;
+ width: auto;
+ height: 3rem;
+
+ margin: 0;
+ padding: 0;
+ border: 0;
+
+}
 
 .topT,.topM{
  display: flex;
@@ -105,11 +116,9 @@ body::before {
 
 .bot{
  background-color: aqua;
- display: flex;
- flex-direction: row;
- justify-content: space-around;
- align-items: stretch;
- gap: 6rem;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ text-align: center;
  margin: 1rem 0 0 0;
  padding: 0;
 }
